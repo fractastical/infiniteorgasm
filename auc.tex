@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+\begin{document}
+
+\title{Quantifying Peak States Using Physiological Signals: Breathing Rate and Sound Amplitude}
+\author{Researcher Name}
+\date{\today}
+\maketitle
+
+\begin{abstract}
+This study investigates the use of physiological signals, specifically breathing rate and sound amplitude, to quantify the intensity and duration of peak states. By establishing thresholds for these parameters, we tracked the intensity over time, providing insights into the fluctuations and characteristics of these states.
+\end{abstract}
+
+\section{Introduction}
+Peak states, such as orgasms, are characterized by distinct physiological responses. Measuring these responses can offer valuable insights into the intensity and duration of such states. This study employs breathing rate and sound amplitude as proxies to identify and quantify these peak experiences.
+
+\section{Methodology}
+\subsection{Data Collection}
+We used sample data to simulate minute-level observations of breathing rate and sound amplitude over seven days. The thresholds for identifying peak states were set at 22 breaths per minute (bpm) and 73 decibels (dB) for breathing rate and sound amplitude, respectively.
+
+\subsection{Data Analysis}
+The intensity of the peak state was calculated using a normalized sum of breathing rate and sound amplitude values exceeding their respective thresholds. The area under the curve (AUC) for each peak state was computed using numerical integration.
+
+\section{Results}
+Figure \ref{fig:intensity_curve} illustrates the intensity of peak states over time, based on the combined measure of breathing rate and sound amplitude. Figure \ref{fig:auc_curve} shows the AUC for each peak state plotted over time.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{intensity_curve.png}
+    \caption{Intensity of Peak States Based on Breathing Rate and Sound Amplitude}
+    \label{fig:intensity_curve}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{auc_curve.png}
+    \caption{Area Under the Curve (AUC) for Each Peak State}
+    \label{fig:auc_curve}
+\end{figure}
+
+Table \ref{tab:sample_data} presents the sample data used in this study.
+
+\begin{table}[h]
+    \centering
+    \caption{Sample Data: Breathing Rate and Sound Amplitude}
+    \label{tab:sample_data}
+    \begin{tabular}{@{}cccc@{}}
+        \toprule
+        Day & Minute & Breathing Rate (bpm) & Sound Amplitude (dB) \\ \midrule
+        1 & 1 & 18 & 68 \\
+        1 & 2 & 20 & 70 \\
+        1 & 3 & 21 & 71 \\
+        1 & 4 & 20 & 72 \\
+        1 & 5 & 22 & 74 \\
+        1 & 6 & 23 & 75 \\
+        \dots & \dots & \dots & \dots \\
+        7 & 5 & 29 & 80 \\
+        7 & 6 & 30 & 81 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{Discussion}
+The intensity curve demonstrates the fluctuations in peak state intensity over time. The AUC plot provides a measure of the overall intensity and duration of each peak state. This approach allows for a nuanced understanding of how physiological responses correlate with subjective experiences of peak states.
+
+\section{Conclusion}
+By leveraging physiological signals such as breathing rate and sound amplitude, this study provides a framework for quantifying the intensity and duration of peak states. Future research can expand on these methods to include additional parameters and larger datasets for more comprehensive analysis.
+
+\section{Related Work}
+Research on emotion recognition and drowsiness detection provides a foundation for this study. Techniques in these fields often use physiological signals to classify states of arousal and stress. For instance, studies have used heart rate, respiratory rate, and various biosignals to identify different emotional and physical states \cite{drowsiness_detection}. Similarly, detecting drowsiness and mental workload involves similar physiological measurements to assess and quantify human states \cite{emotion_recognition}.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\begin{thebibliography}{9}
+\bibitem{drowsiness_detection}
+F. Bourghelle, Development of an automatic drowsiness monitoring system using the electrocardiogram, 2016.
+
+\bibitem{emotion_recognition}
+J. Healey, R. Picard, Stress recognition in automobile drivers. IEEE Trans. Intell. Transport. Syst., 2005.
+\end{thebibliography}
+
+\end{document}
