@@ -1,0 +1,1 @@
+Conceptual approach to peak states where you measure the area under the curve of a peak state and plot over time. Can be combined with facilicating techology and combined with competitive dynamics if desired. 
